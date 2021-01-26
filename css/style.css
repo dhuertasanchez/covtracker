@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #000;
+    --color-on-primary: #FFF;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.mdl-layout__header {
+    background: var(--primary-color) !important;
+    color: var(--color-on-primary) !important;
+}
+
+.hero-container {
+    background-color: red;
+    background: url('../images/clip-boy-always-wear-your-mask.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #29B6F6;
+    mix-blend-mode: overlay;
+}
+
+.hero-container p {
+    color: var(--color-on-primary);
+}
+
+.mdl-button, p {
+    font-family: 'Lato';
+}
+
+.spread-section-container, .about-section-container, .symptomp-section-container {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info-spread-container {
+    padding: 28px;
+}
+
+.card-info-spread-container:nth-child(3) {
+    background: #FF4053;
+    border-radius: 8px;
+    color: var(--color-on-primary);
+    font-family: 'Lato';
+}
+
+.symptomp-section-container .mdl-cell:nth-child(2) {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.icon-rounded-container {
+    width: 70px;
+    height: 70px;
+    background: rgba(41, 182, 246, .5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-rounded-container img {
+    width: 64px;
+    height: auto;
+}
+
+.avatar-container, .title-container, .body-container {
+    max-width: 100%;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.material-icons.mdl-list__item-icon {
+    color: #388E3C;
+}
+
+.image-cover {
+    max-width: 100%;
+    height: auto;
+}
+
+.sub-txt {
+    color: #FF4053;
+}
+
+.cell-symptom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.symptom-container-txt {
+    display: flex;
+    margin: 1.2rem 0;
+    justify-content: space-between;
+    padding: 8px 8px 0 8px;
+    border-radius: 8px;
+}
+
+.symptom-container-txt img {
+    width: 64px !important;
+    height: 64px;
+    margin-right: 12px;
+}
+
+.symptom-container-txt:nth-child(2) {
+    background: #FF4053;
+    color: var(--color-on-primary);
+}
+
+.symptom-container-txt-general {
+    border-radius: 8px;
+    padding: 12px;
+}

@@ -284,7 +284,7 @@
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function() {
                 navigator.serviceWorker
-                    register("pwabuilder-sw.js")
+                    .register("pwabuilder-sw.js")
                     .then(res => console.log("Service Worker registrado"))
                     .catch(err => console.log("Error al registrar el Service Worker"))
             })

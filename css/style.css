@@ -30,7 +30,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.mdl-layout__header {
+.mdl-layout__header, .mdl-mega-footer {
     background: var(--primary-color) !important;
     color: var(--color-on-primary) !important;
 }

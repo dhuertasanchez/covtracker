@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="js/manifest.json">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <title>COVID19 Tracker</title>
+</head>
+<body>
+    
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><img src="images/3637180741584409097-64.png" alt="">&nbsp;&nbsp;&nbsp;COVID-19 Tracker</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="index.html">Inicio</a>
+          <a class="mdl-navigation__link" href="estadisticas.html">Estadísticas</a>
+          <a class="mdl-navigation__link" href="vacunacion.html">Vacunación</a>
+          <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Title</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">Inicio</a>
+        <a class="mdl-navigation__link" href="estadisticas.html">Estadísticas</a>
+        <a class="mdl-navigation__link" href="vacunacion.html">Vacunación</a>
+        <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <div class="mdl-grid hero-container">
+            <div class="overlay"></div>
+            <div class="mdl-cell mdl-cell--6-col">
+                <p class="mdl-typography--display-3">
+                    #QuédateEnCasa
+                </p>
+                <p class="mdl-typography--headline">
+                    Recuerda, si tu localidad se encuentra en semáforo rojo, deberás salir únicamente a actividades esenciales. Evita ponerte en riesgo y 
+                    poner en riesgo a tus seres queridos, si te cuidas tú, nos cuidas a todos.
+                </p>
+                <a href="https://coronavirus.gob.mx" target="_blank" rel="noopener noreferrer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><span class="material-icons material-icons-outlined">launch</span>&nbsp;&nbsp;&nbsp;Saber más</a>
+            </div>
+        </div>
+
+        <div class="mdl-grid about-section-container">
+            <div class="mdl-cell mdl-cell--6-col">
+                <p class="mdl-typography--display-1">
+                    ¿Qué es la COVID-19?
+                </p>
+                <p class="mdl-typography--body-1">
+                    <b>COVID-19</b> es la enfermedad infecciosa causada por el coronavirus <b>SARS-CoV-2</b>. La denominación viene de la frase en 
+                    inglés <i>coronavirus disease of 2019</i>.<br>
+                    La enfermedad causa molestias respiratorias (como las de un resfriado) con síntomas como tos, fiebre, y en algunos casos (los más graves), dificultad para respirar.<br>
+                    Puedes seguir algunas medidas de prevención para evitar en lo posible contagiarte:
+                </p>
+                <ul class="mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <span class="material-icons material-icons-outlined mdl-list__item-icon">check_circle</span>
+                            Lava tus manos con regularidad
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <span class="material-icons material-icons-outlined mdl-list__item-icon">check_circle</span>
+                            Usa el estornudo de etiqueta
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <span class="material-icons material-icons-outlined mdl-list__item-icon">check_circle</span>
+                            Mantén la sana distancia
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <span class="material-icons material-icons-outlined mdl-list__item-icon">check_circle</span>
+                            Sal de casa sólo si es necesario
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+                <img src="images/cherry-update-on-the-news.png" class="image-cover" alt="">
+            </div>
+        </div>
+
+        <div class="mdl-grid spread-section-container">
+            <div class="mdl-cell--12-col">
+                <p class="mdl-typography--display-1 mdl-typography--text-center">
+                    ¿Cómo se contagia?
+                </p>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col card-info-spread-container">
+                <div class="avatar-container">
+                    <div class="icon-rounded-container">
+                        <img src="images/15010910081582000618-128.png" alt="">
+                    </div>
+                </div>
+                <div class="mdl-typography--title mdl-typography--text-center title-container">
+                    <b>De persona a persona</b>
+                </div>
+                <div class="mdl-typography--body-1 mdl-typography--text-center body-container">
+                    Al tocar o estrechar la mano de una persona que se encuentra enferma
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp card-info-spread-container">
+                <div class="avatar-container">
+                    <div class="icon-rounded-container">
+                        <img src="images/16675954621583900707-128.png" alt="">
+                    </div>
+                </div>
+                <div class="mdl-typography--title title-container">
+                    <b>Vía aérea</b>
+                </div>
+                <div class="mdl-typography--body-1 mdl-typography--text-center body-container">
+                    Mediante gotículas que esparce una persona infectada al toser, estornudar, exhalar o hablar sin usar cubrebocas
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col card-info-spread-container">
+                <div class="avatar-container">
+                    <div class="icon-rounded-container">
+                        <img src="images/15993800961583900710-128.png" alt="">
+                    </div>
+                </div>
+                <div class="mdl-typography--title mdl-typography--text-center title-container">
+                    <b>Por objetos contaminados</b>
+                </div>
+                <div class="mdl-typography--body-1 mdl-typography--text-center body-container">
+                    Al tener contacto con algún objeto o superficie contaminada y luego llevarse la manos a boca, nariz u ojos
+                </div>
+            </div>
+        </div>
+
+        <div class="mdl-grid symptomp-section-container">
+            <div class="mdl-cell mdl-cell--12-col">
+                <p class="mdl-typography--display-1 mdl-typography--text-center">
+                    Síntomas de COVID-19
+                </p>
+                <p class="mdl-typography--body-1 mdl-typography--text-center sub-txt">
+                    Debes sospechar de contagio de COVID-19 si presentas al menos dos de los siguiente síntomas
+                </p>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp">
+                <img src="images/clip-doc-i-need-your-help.png" alt="" class="image-cover">
+            </div>
+            <div class="mdl-cell mdl-cell-5-col cell-symptom">
+                <div class="mdl-shadow--6dp symptom-container-txt">
+                    <img src="images/18113081891599778135-64.png" alt="">
+                    <div class="card-info">
+                        <p class="mdl-typography--subhead"><b>Tos seca</b><br>
+                            <span class="mdl-typography--body-1">
+                                Tos seca y persistente. Según el CDC puede manifestarse en el 59 a 82 % de los casos y puede llegar a impedir la respiración normal
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="mdl-shadow--6dp symptom-container-txt">
+                    <img src="images/18964458681599778134-64.png" alt="">
+                    <div class="card-info">
+                        <p class="mdl-typography--subhead"><b>Fiebre alta y escalofríos</b><br>
+                            <span class="mdl-typography--body-1">
+                                La fiebre alta y los escalofríos podría ser el primer signo de la enfermedad (procure tomar la temperatura al amanecer si le es posible)
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--8-col mdl-shadow--6dp symptom-container-txt-general">
+                <p class="mdl-typography--subhead mdl-typography--text-center">
+                    <b>Los síntomas anteriores pueden estar acompañados por alguno de los siguientes:</b>
+                </p>
+                <p class="mdl-typography--body-1">
+                    Dificultad para respirar, dolor de garganta, escurrimiento nasal, ojos rojos, dolores en músculos o articulaciones, pérdida del olfato y/o gusto, problemas digestivos, 
+                    fatiga al hablar y caminar trechos cortos.
+                </p>
+                <p class="mdl-typography--body-1">
+                    Si perteneces a alguno de los grupos de riesgo como lo son las personas mayores a 60 años, personas con enfermedades cardíacas o pulmonares, diabetes tipo 2, obesidad, presión 
+                    arterial alta y diabetes tipo 1, así como mujeres embarazadas y personas con cáncer o VIH <b>deben acudir a recibir atención médica inmediata</b>, ya que pueden desarrollar complicaciones 
+                    graves durante la enfermedad.
+                </p>
+            </div>
+        </div>
+
+      </div>
+
+
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__middle-section">
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Features</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Details</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Specs</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Technology</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Patterns</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contracts</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Questions</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+      
+        </div>
+      
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-logo">Title</div>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      
+      </footer>
+    </main>
+  </div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>

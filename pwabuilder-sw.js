@@ -23,7 +23,7 @@
 //   })
 // );
 
-const staticDevCovTrack = "cov-track-site-v1"
+const staticDevCovTrack = "cov-track-site-v1.1"
 const assets = [
     "/",
     "index.html",

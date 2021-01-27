@@ -3,6 +3,29 @@
     --color-on-primary: #FFF;
 }
 
+@media only screen and (max-width: 768px) {
+    /* .overlay {
+        background-color: #000 !important;
+    } */
+
+    .hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-container p:nth-child(1) {
+        font-size: 38px;
+    }
+
+    .hero-container .mdl-cell {
+        background: rgba(0, 0, 0, .7);
+        border-radius: 8px;
+        padding: 8px;
+        color: #000 !important;
+    }
+  }
+
 * {
     font-family: 'Lato', sans-serif;
 }

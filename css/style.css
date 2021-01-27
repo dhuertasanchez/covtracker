@@ -3,6 +3,10 @@
     --color-on-primary: #FFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 768px) {
     /* .overlay {
         background-color: #000 !important;
@@ -45,6 +49,11 @@
     position: relative;
     display: flex;
     align-content: center;
+}
+
+.hero-container a {
+    margin-top: 42px;
+    float: right;
 }
 
 .overlay {

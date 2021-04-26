@@ -51,6 +51,13 @@ html {
     align-content: center;
 }
 
+.hero-container#hero-statistics {
+    background: url('../images/clip-news-from-computer-about-coronavirus-pandemic-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
 .hero-container a {
     margin-top: 42px;
     float: right;
@@ -160,4 +167,32 @@ html {
 .symptom-container-txt-general {
     border-radius: 8px;
     padding: 12px;
+}
+
+.overview-statistics {
+    /* padding: 8px; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overview-statistics .material-icons {
+    font-size: 48px;
+}
+
+.overview-statistics .material-icons:nth-child(1) {
+    color: red;
+}
+
+.overview-statistics .avatar-container, .overview-statistics .title-container, .overview-statistics .body-container {
+    padding: 12px;
+}
+
+.overview-statistics-chart {
+    height: 70vh;
+    min-height: 500px;
+    padding: 5px 0;
+    border-radius: 8px;
 }

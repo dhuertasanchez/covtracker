@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="js/manifest.json">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <title>COVID19 Tracker - Inicio</title>
+</head>
+<body>
+    
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><img src="images/3637180741584409097-64.png" alt="">&nbsp;&nbsp;&nbsp;COVID-19 Tracker</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="./">Inicio</a>
+          <a class="mdl-navigation__link" href="estadisticas.html">Estadísticas</a>
+          <a class="mdl-navigation__link" href="vacunacion.html">Vacunación</a>
+          <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Title</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="./">Inicio</a>
+        <a class="mdl-navigation__link" href="estadisticas.html">Estadísticas</a>
+        <a class="mdl-navigation__link" href="vacunacion.html">Vacunación</a>
+        <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <div class="mdl-grid hero-container" id="hero-statistics">
+            <div class="overlay"></div>
+            <div class="mdl-cell mdl-cell--6-col">
+                <p class="mdl-typography--display-3">
+                    Estadísticas
+                </p>
+                <p class="mdl-typography--headline">
+                    Se muestran todos los casos para la ciudad seleccionada. Las cifras de cada día indican los casos nuevos informados desde el día anterior.
+                </p>
+                <!-- <a href="https://coronavirus.gob.mx" target="_blank" rel="noopener noreferrer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><span class="material-icons material-icons-outlined">launch</span>&nbsp;&nbsp;&nbsp;Saber más</a> -->
+            </div>
+        </div>
+
+        <div class="mdl-grid about-section-container">
+            <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp overview-statistics">
+                <div class="avatar-container">
+                    <span class="material-icons material-icons-outlined">analytics</span>
+                </div>
+                <div class="mdl-typography--display-1 title-container">
+                    Casos totales
+                </div>
+                <div class="mdl-typography--headline body-container">
+                    xx
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp overview-statistics">Hola</div>
+            <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp overview-statistics">Hola</div>
+
+            <div class="mdl-cell mdl-cell--9-col mdl-shadow--6dp overview-statistics-chart">
+                <canvas id="axes_linear"></canvas>
+            </div>
+        </div>
+                
+
+      </div>
+
+
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__middle-section">
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Enlaces de interes</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="https://gob.mx/salud" target="_blank" rel="noopener noreferrer">Secretaría de Salud</a></li>
+              <li><a href="https://coronavirus.gob.mx" target="_blank" rel="noopener noreferrer">Información sobre el COVID-19</a></li>
+              <li><a href="https://coronavirus.gob.mx/semaforo" target="_blank" rel="noopener noreferrer">Semáforo epidemiológico</a></li>
+              <li><a href="https://who.int/es/emergencies/diseases/novel-coronavirus-2019" target="_blank" rel="noopener noreferrer">Sitio de la OMS</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Redes sociales SS</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="https://twitter.com/SSalud" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://facebook.com/SecretariadeSaludMX" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            </ul>
+          </div>
+      
+          <!-- <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Technology</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Patterns</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contracts</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Questions</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div> -->
+      
+        </div>
+      
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-logo">CoVTracker 2021</div>
+          <ul class="mdl-mega-footer__link-list">
+            <!-- <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li> -->
+          </ul>
+        </div>
+      
+      </footer>
+    </main>
+  </div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>
